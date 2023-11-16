@@ -1,9 +1,13 @@
 ### Escuela Colombiana de Ingeniería
+
 ### Arquitecturas de Software - ARSW
+
 ### Angie Natalia Mojica - Daniel Antonio Santanilla
+
 ## Escalamiento en Azure con Maquinas Virtuales, Sacale Sets y Service Plans
 
 ### Dependencias
+
 * Cree una cuenta gratuita dentro de Azure. Para hacerlo puede guiarse de esta [documentación](https://azure.microsoft.com/es-es/free/students/). Al hacerlo usted contará con $100 USD para gastar durante 12 meses.
 Antes de iniciar con el laboratorio, revise la siguiente documentación sobre las [Azure Functions](https://www.c-sharpcorner.com/article/an-overview-of-azure-functions/)
 
@@ -18,23 +22,29 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 1. Cree una Function App tal cual como se muestra en las  imagenes.
 
-![](images/part3/part3-function-config.png)
+    ![part3-function-config](images/part3/part3-function-config.png)
 
-![](images/part3/part3-function-configii.png)
+    ![part3-function-configii](images/part3/part3-function-configii.png)
+
+    **Lo realizado:**
+
+    Se crea un Function App
+
+    ![functionappcreation](./images/lab/functionappcreation.png)
 
 2. Instale la extensión de **Azure Functions** para Visual Studio Code.
 
-![](images/part3/part3-install-extension.png)
+    ![part3-install-extension](images/part3/part3-install-extension.png)
 
 3. Despliegue la Function de Fibonacci a Azure usando Visual Studio Code. La primera vez que lo haga se le va a pedir autenticarse, siga las instrucciones.
 
-![](images/part3/part3-deploy-function-1.png)
+    ![part3-deploy-function-1](images/part3/part3-deploy-function-1.png)
 
-![](images/part3/part3-deploy-function-2.png)
+    ![part3-deploy-function-2](images/part3/part3-deploy-function-2.png)
 
 4. Dirijase al portal de Azure y pruebe la function.
 
-![](images/part3/part3-test-function.png)
+    ![part3-test-function](images/part3/part3-test-function.png)
 
 5. Modifique la coleción de POSTMAN con NEWMAN de tal forma que pueda enviar 10 peticiones concurrentes. Verifique los resultados y presente un informe.
 
@@ -50,8 +60,8 @@ La computación sin servidor (o serverless para abreviar) es un modelo de ejecuc
 * ¿Qué es el runtime y que implica seleccionarlo al momento de crear el Function App?
 * ¿Por qué es necesario crear un Storage Account de la mano de un Function App?
 * ¿Cuáles son los tipos de planes para un Function App?, ¿En qué se diferencias?, mencione ventajas y desventajas de cada uno de ellos.
-    - **Plan Consumo:** Cuando se usa el plan de consumo, las instancias del host de Azure Functions se agregan y quitan de forma dinámica según el número de eventos entrantes. El plan de consumo es la opción de hospedaje completamente sin servidor de Azure Functions.
-    - **Plan Elastic Premium:** Functions es una opción de hospedaje de escalado dinámico para las aplicaciones de funciones.
+  * **Plan Consumo:** Cuando se usa el plan de consumo, las instancias del host de Azure Functions se agregan y quitan de forma dinámica según el número de eventos entrantes. El plan de consumo es la opción de hospedaje completamente sin servidor de Azure Functions.
+  * **Plan Elastic Premium:** Functions es una opción de hospedaje de escalado dinámico para las aplicaciones de funciones.
 * ¿Por qué la memoization falla o no funciona de forma correcta?
 * ¿Cómo funciona el sistema de facturación de las Function App?
 * Informe
